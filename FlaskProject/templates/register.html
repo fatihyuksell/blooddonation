@@ -1,0 +1,82 @@
+{#{% extends "main.html" %}#}
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 2px solid #ccc;
+  box-sizing: border-box;
+  width:400px;
+
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 15%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+
+.container {
+  padding: 16px;
+}
+
+</style>
+</head>
+<body>
+
+<h2>Donor Register</h2>
+
+<form action="/register" method="post">
+  <div class="imgcontainer">
+  </div>
+
+  <div class="container">
+    <label for="donor_id"><b>donor_id</b></label>
+    <input type="text" placeholder="Enter Your Identity" name="donor_id" maxlength="11" required>
+
+    <label for="donor_name"><b>donor_name</b></label>
+    <input type="text" placeholder="Enter Your Name" name="donor_name" required>
+
+    <label for="donor_surname"><b>donor_surname</b></label>
+    <input type="text" placeholder="Enter Your Surname" name="donor_surname" required>
+
+    <label for="donor_sex"><b>donor_sex</b></label>
+    <input type="text" placeholder="Male or Female" name="donor_sex" required>
+
+    <label for="donor_age"><b>donor_age</b></label>
+    <input type="text" placeholder="Enter Your Age" name="donor_age" required>
+
+    <label for="donor_adress"><b>donor_adress</b></label>
+    <input type="text" placeholder="Enter Your Adress" name="donor_adress" required>
+
+    <label for="donor_password"><b>donor_password</b></label>
+    <input type="password" placeholder="Enter Your Password" name="donor_password" required>
+
+
+    <button type="submit">Register</button>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+  </div>
+</form>
+
+</body>
+</html>

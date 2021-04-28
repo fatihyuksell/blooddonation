@@ -1,0 +1,90 @@
+
+
+
+{#{% extends "main.html" %}#}
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 2px solid #ccc;
+  box-sizing: border-box;
+  width:400px;
+
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 15%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+
+.container {
+  padding: 16px;
+}
+
+</style>
+</head>
+<body>
+
+<h2>Patient Register</h2>
+
+<form action="/register3" method="post">
+  <div class="imgcontainer">
+  </div>
+
+  <div class="container">
+    <label for="pat_id"><b>pat_id</b></label>
+    <input type="text" placeholder="Enter Your Identity" name="pat_id" maxlength="11" required>
+
+    <label for="pat_name"><b>pat_name</b></label>
+    <input type="text" placeholder="Enter Your Name" name="pat_name" required>
+
+    <label for="pat_surname"><b>pat_surname</b></label>
+    <input type="text" placeholder="Enter Your Surname" name="pat_surname" required>
+
+    <label for="pat_age"><b>pat_age</b></label>
+    <input type="text" placeholder="Enter Your Age" name="pat_age" required>
+
+    <label for="pat_sex"><b>pat_sex</b></label>
+    <input type="text" placeholder="Male or Female" name="pat_sex" required>
+
+
+
+    <label for="pat_blood"><b>pat_blood</b></label>
+    <input type="text" placeholder="Enter Your blood" name="pat_blood" required>
+
+    <label for="pat_host"><b>pat_host</b></label>
+    <input type="text" placeholder="Enter Your host" name="pat_host" required>
+
+    <label for="pat_password"><b>pat_password</b></label>
+    <input type="password" placeholder="Enter Your Password" name="pat_password" required>
+
+
+    <button type="submit">Register</button>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+  </div>
+</form>
+
+</body>
+</html>

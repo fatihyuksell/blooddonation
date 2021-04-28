@@ -1,0 +1,22 @@
+{#{%  extends "main.html" %}#}
+
+{% block content %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+
+
+    <form action="/login2" method="post">
+
+    <label> user nick</label>
+    <input type="text" name="user_id"><br>
+
+    <label> user password</label>
+    <input type="text" name="user_password"><br>
+
+    <button type="submit"> login </button>
+
+    </form>
+
+
+{% endblock %}
+
